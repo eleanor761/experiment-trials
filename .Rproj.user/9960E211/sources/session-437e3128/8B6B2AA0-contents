@@ -1,0 +1,53 @@
+---
+title: "verb-extension markdown"
+output: html_document
+date: "2025-09-29"
+---
+
+ALL FILES COMPARISON
+filename_similarity_summary: across file comparison
+
+word_pair_similarity_summary: compares each initial to each initial
+
+word_similarities_initial_dimension: compares similarity within initial descritptions. see std_variability
+
+INITIALS ANALYSIS
+IMPORTED word_variability_initial: compares similarity within each initial. see std_variability
+
+POTENTIALS ANALYSIS
+For each filename, compares all pairs of descriptions within that filename
+Calculates similarity scores between description pairs
+Categorizes comparisons as "within_dimension" or "across_dimension"
+
+IMPORTED potential_filename_variability_summary.csv - Statistics showing which videos have the most variable descriptions
+
+IMPORTED potential_dimension_pair_similarity_summary.csv - How similar descriptions are for each pair of dimensions
+
+within_filename_description_similarities.csv - All pairwise comparisons within each filename
+
+within_dimension_variability.csv - Variability statistics for descriptions within each dimension type
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
