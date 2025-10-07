@@ -234,7 +234,7 @@ function getFilteredData() {
     console.log("Total trials found:", allTrials.length);
     
     // Filter to only video-button-response trials
-    const trials = allTrials.filter(trial => trial.trial_type === 'video-button-response');
+    const trials = allTrials.filter(trial => trial.trial_type === 'video-button-response' || 'video-button-nofeedback');
     console.log("Video-button-response trials found:", trials.length);
     
     if (trials.length === 0) {
