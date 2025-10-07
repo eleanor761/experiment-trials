@@ -335,15 +335,15 @@ const completion_code_trial = {
   stimulus: function() {
       return `
           <p>You have completed the main experiment!</p>
-          <p>You can close the page now.</p>
+          <p>Please complete this short survey</p>
       `;
   },
-  choices: ['Finish'],
+  choices: ['Survey'],
   data: {
       trial_type: 'completion'
   },
   on_finish: function() {
-      window.location.href = `https://uwmadison.sona-systems.com/default.aspx?logout=Y`;
+      window.location.href = `https://uwmadison.co1.qualtrics.com/jfe/form/SV_9TXTRcbT3CdC9pQ`;
   }
 };
 
